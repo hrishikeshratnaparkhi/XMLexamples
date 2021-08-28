@@ -11,7 +11,7 @@ namespace Delegateexp
         {
             using (FileStream fs = new FileStream(@"C\Test\SampleFile.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite))
             {
-                StreamWriter m_StreamWriter = new StreamWriter(fs);
+               // StreamWriter m_StreamWriter = new StreamWriter(fs);
                 m_StreamWriter.BaseStream.Seek(0, SeekOrigin.End);
 
 
